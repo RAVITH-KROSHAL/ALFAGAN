@@ -1,0 +1,267 @@
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .SocialMedia{
+    margin-top: 220px;
+  }
+  
+  .BackgroundImage {
+    width: 100%;
+    height: auto;
+    margin-top: -90px;
+   
+ 
+  }
+  
+  .TextContainer {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+/* styles.css */
+
+.WelcomeHome {
+  font-size: 2.1rem;
+}
+
+.EmpHome {
+  font-size: 4rem;
+}
+
+.WeHome {
+  font-size: 2.1rem;
+}
+
+
+
+  .BackgroundVideo {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    margin-left: -100%;
+    z-index: -9999;
+   
+    
+  
+  }
+
+  .BackgroundVideo:hover{
+    transform: scale(1.1);
+  }
+
+  .BrainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  
+
+  /* In your CSS file */
+/* Specify the font for headings */
+h1, h2, h3 {
+  font-family: 'EuclidCircularA-Semibold', Arial, sans-serif;
+  
+}
+
+/* Specify the font for body text */
+p, li {
+  font-family: 'EuclidCircularA-Semibold', Arial, sans-serif;
+}
+
+.animation {
+  opacity: 0; /* Initially set to invisible */
+  transition: opacity 1s ease-in-out; /* Add a smooth transition */
+}
+
+.fade-in {
+  opacity: 1; /* Make the element visible when the fade-in class is added */
+}
+
+.animation {
+  opacity: 0;
+  transform: translateY(20px); /* Add a subtle vertical animation */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Additional styling for the services list */
+
+
+
+.OurSreviceContent {
+  text-align: center;
+  padding: 50px;
+}
+
+.OurSreviceContent h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-list li {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #f8f9ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  color: #000000;
+
+}
+
+.services-list li:hover {
+  transform: translateY(-50px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  color: #0056b3;
+  background-color: aqua;
+}
+
+
+
+
+.services-list li h3 {
+  margin-bottom: 5px;
+}
+
+.services-list li p {
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Style for the service category container */
+.service-category {
+  display: flex;
+  align-items: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 80px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the service image */
+.service-image {
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 100px; /* Adjust the image width */
+  height: 100px; /* Adjust the image height */
+  border-radius: 500%;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style for the service content */
+.service-content {
+  flex-grow: 1;
+}
+
+
+.sectionHome{
+ margin-top: -170px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .service-category {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .service-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .service-image img {
+    max-width: 100px;
+  }
+
+  .WelcomeHome {
+    font-size: 1.2rem;
+  }
+  
+  .EmpHome {
+    font-size: 1.8rem;
+  }
+  
+  .WeHome {
+    font-size: 1.3rem;
+  }
+
+  .TextContainer{
+    margin-top: -100px;
+  }
+
+  .TextContainer {
+    width: 80%;
+    height: auto;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .BackgroundVideo{
+    margin-bottom: -1000px;
+  }
+
+ 
+}
+
+@media screen and (max-width: 992px) {
+  
+ 
+
+  .homecontact{
+    margin-bottom: 600px;
+  }
+
+  .BackgroundVideo{
+    padding-top: 795px;
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  .BackgroundVideo{
+    padding-top: 795px;
+  }
+
+  .sectionHome{
+    margin-top: -650px;
+   }
+}
+

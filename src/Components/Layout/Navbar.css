@@ -1,0 +1,162 @@
+/* Navbar.css */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add a style for the active link */
+.active {
+  font-weight: bold; /* You can customize the style as needed */
+  color: #ff0000;   /* Change the color to your preferred highlight color */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  max-width: 100px;
+  margin-left: 166px;
+  transition: transform 0.3s ease; /* Add a transition for the 'transform' property */
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Increase the size on hover (adjust the scale value as needed) */
+}
+
+.logo {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+  animation: moveLeftRight 0.5s alternate infinite; /* Apply left-right movement animation */
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0); /* Initial position */
+  }
+  50% {
+    transform: translateX(10px); /* Move to the right */
+  }
+  100% {
+    transform: translateX(-10px); /* Move to the left */
+  }
+}
+
+
+.logo img {
+  width: 250px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  alt: "Eside Logo";
+  margin-left: -145%;
+}
+
+.Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+  display: none; /* Hide the menu button by default */
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.ul li a {
+  text-decoration: none;
+  color: #000000; /* Change the link color to your desired color */
+  padding: 1rem;
+  display: block;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.ul li a:hover {
+  color: #de5656;
+  transform: scale(1.2); /* zoom effect on hover */
+}
+
+
+
+
+
+/* Media query for mobile phones */
+@media (max-width: 768px) {
+  /* Show the mobile menu button on mobile phones */
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 30%;
+    background-color: transparent;
+    transition: left 0.3s;
+    
+  }
+
+  .ul.mobile-open {
+    left: 0;
+  }
+
+  .ul li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/* Navbar.css */
+ul li a.active {
+  color: #007bff; /* Change this to your desired active link color */
+  text-decoration: none; /* Remove the default underline */
+  background-image: linear-gradient(to bottom, #007bff 0%, #007bff 100%);
+  background-size: 100% 2px; /* Adjust the 2px to control the height (thickness) of the underscore */
+  background-repeat: no-repeat;
+  background-position: 0 100%; /* Position the underscore at the bottom */
+  
+}
+
+/* Navbar.css */
+
+/* Add padding to the icons */
+ul li a span {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px; /* Adjust the padding as needed */
+  
+}
+
+/* Add some spacing between the icon and text */
+ul li a span svg {
+  margin-right: 7px; /* Adjust the margin as needed */
+  
+}
+

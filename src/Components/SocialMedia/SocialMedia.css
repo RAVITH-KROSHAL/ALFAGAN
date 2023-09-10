@@ -1,0 +1,79 @@
+/* Add styles for social media links in header */
+.social-links {
+    margin-top: -30px;
+    position: absolute;
+    margin-left: -20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 1;
+    
+   
+  
+  
+  }
+  
+  .social-links a {
+    color: #3498db;
+    font-size: 30px; /* Increase the font size for larger icons */
+    margin-right: 15px;
+    padding-top: 1px;
+    transition: color 0.3s;
+    display: inline-block;
+    z-index: 1;
+     }
+  
+  .social-links a:hover {
+    color: #2980b9;
+  }
+  
+  /* Add styles for social media links in footer */
+  .social-media {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Stick the footer to the bottom of the viewport */
+    right: 0; /* Align the social media icons to the right */
+     /* Stick the footer to the bottom of the viewport */  
+  
+  }
+  
+  .social-media .social-links a {
+    color: #3498db; /* Social icon color */
+    font-size: 28px; /* Increase the font size for larger icons */
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s; /* Add transition for transform */
+    display: inline-block; /* Ensure the icon takes up space for hover effect */
+  }
+  
+  .social-media .social-links a:hover {
+    color: #2980b9; /* Hover color - same as the social icon color */
+    transform: scale(1.8); /* Zoom effect on hover */
+  }
+  
+
+
+/* Add styles for social media links in footer */
+.social-links {
+  /* Align icons horizontally with space between them */
+  position: absolute;
+  background-color: #f7f7f7;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+  
+  @media (max-width: 992px) {
+
+  
+  /* Add styles for social media links in footer */
+  .social-links {
+    /* Align icons horizontally with space between them */
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+  }
+}

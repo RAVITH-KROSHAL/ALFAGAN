@@ -1,0 +1,38 @@
+
+.contact-section {
+  background-color: #747474;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 100px;
+  color: #f8f9ff;
+  width: 200%;
+  margin-left: -50%;
+  
+}
+
+.contact-section h2, p {
+padding: 10px;
+
+}  
+
+.contact-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+.contact-section{
+  font-size: 80%;
+}
+
+.contact-button {
+  font-size: 90%;
+  
+}
+
+}

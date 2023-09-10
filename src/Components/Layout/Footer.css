@@ -1,0 +1,134 @@
+footer {
+    margin-top: 50%;
+    background-color: #000000;
+    position: relative;
+    
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+  .container p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  ul li a:hover {
+    color: #867373;
+  }/* Footer.css */
+
+footer {
+    background-color: #565869;
+    padding: 30px 0;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+  .container p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  ul li a:hover {
+    color: #de5656;
+  }
+  
+  /* Create the A-shape effect using CSS pseudo-elements */
+  footer::before,
+  footer::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #887272;
+  }
+  
+  footer::before {
+    left: 0;
+    border-right: 1200px solid transparent;
+  }
+  
+  footer::after {
+    right: 0;
+    border-left: 1200px solid transparent;
+  }
+  
+  
+  /* Create the A-shape effect using CSS pseudo-elements */
+  footer::before,
+  footer::after {
+    z-index: -9999;
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 500px solid #8e8ea0;
+  }
+  
+  footer::before {
+    left: 0;
+    border-left:76px solid transparent;
+  }
+  
+  footer::after {
+    right: 0;
+    border-right: 762px solid transparent;
+  }
+  
+  /* Footer.css */
+.footerlogo{
+  margin-left: 10px;
+  margin-bottom: -10px;
+  width: 100px;
+  height: auto;
+}

@@ -1,0 +1,23 @@
+  
+  .CTAButton {
+    background-color: #d10000; /* Blue color for the button */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    position:fixed;
+  
+  }
+  
+  .CTAButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+  }
+
+  .CTAButton:active {
+    transform: scale(0.95); /* Scale down slightly when clicked */
+  }

@@ -1,0 +1,9 @@
+
+  .BrainImage {
+    position: absolute;
+    width: 100px; /* Adjust the initial width of the brain image */
+    height: auto;
+    transition: transform 0.2s ease;
+    z-Index: 9999;
+  }
+  

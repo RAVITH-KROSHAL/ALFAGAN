@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './Components/Layout/Navbar';
+import Footer from './Components/Layout/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Services from './Pages/Services/Services';
+import Projects from './Pages/Projects/Projects';
+import Careers from './Pages/Careers/Careers';
+import Contact from './Pages/Contact/Contact';
+import Search from './Pages/Search/Search';
+import ScrollToTop from './/Components/ScrollToTop/ScrollToTop';
 
-function App() {
+
+export default function App() {
+  const appStyle = {
+    overflowX: 'hidden', // Prevent horizontal scrolling
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <div style={appStyle}>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<Search/>} />
+      </Routes>
+      <Footer />
+      </div>
+   
   );
 }
-
-export default App;

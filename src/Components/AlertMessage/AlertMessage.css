@@ -1,0 +1,218 @@
+  /* #0099ff the best color blue */
+  /* rgb(20, 180, 20)the best color green */
+
+/* .custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    perspective: 1000px; 
+}
+
+
+.error-icon {
+    color: #ff0000;
+    font-size: 88px; 
+    margin-top: -48px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  
+
+  .success-icon {
+    color: rgb(20, 180, 20); 
+    font-size: 88px; 
+    margin-top: -48px;
+    margin-bottom: 25px;
+ 
+    
+  }
+
+
+.custom-alert-content {
+    border: 3.5px solid rgb(20, 180, 20);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(1, 2, 3, 5.5);
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d; 
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.custom-alert-inner {
+    transform: translateZ(40px); 
+    backface-visibility: hidden;
+}
+
+.custom-alert p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.custom-alert-button {
+    background: rgb(20, 180, 20);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-alert-button:hover {
+    background: #0283d8;
+}
+
+
+.custom-alert.active .custom-alert-content {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+  
+@media only screen and (max-width: 622px) {
+    .custom-alert-content {
+        width: 75%;
+    }
+} */
+
+
+/* CSS for CustomAlert Component */
+
+.custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.error-icon {
+    color: #ff0000; /* Red color for error icon */
+    font-size: 88px; /* Adjust the size as needed */
+    margin-top: -48px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Styles for the success icon */
+.success-icon {
+    color: rgb(20, 180, 20); /* Green color for success icon */
+    font-size: 88px; /* Adjust the size as needed */
+    margin-top: -48px;
+    margin-bottom: 25px;
+}
+
+/* Your other styles for the custom alert component */
+/* #0099ff the best color blue */
+/* rgb(20, 180, 20) the best color green */
+
+.custom-alert-content {
+    border: 3.5px solid rgb(20, 180, 20);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(1, 2, 3, 5.5);
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d; /* Preserve 3D effect for child elements */
+    transform: rotateY(0deg) rotateX(0deg); /* Initial rotation */
+    transition: transform 0.5s ease; /* Smooth transition for rotation */
+}
+
+.custom-alert-inner {
+    transform: translateZ(40px); /* Apply depth to the content */
+    backface-visibility: hidden; /* Hide backface of content */
+}
+
+.custom-alert p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.custom-alert-button {
+    background: rgb(20, 180, 20);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* .custom-alert-button:hover {
+    background: #0283d8;
+} */
+
+/* Add a class to trigger the 3D effect */
+.custom-alert.active .custom-alert-content {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+@media only screen and (max-width: 622px) {
+
+    .custom-alert-content {
+        width: 75%;
+    }
+    /* .success {
+        padding-left: 45px;
+        padding-right: 45px;
+    } */
+}
+
+.error {
+  border-color: rgb(255, 0, 0); /* Red border for error alert */
+  color: rgb(0, 0, 0); /* Red text color for error alert */
+}
+
+.success {
+  border-color: rgb(20, 180, 20); /* Green border for success alert */
+  color: rgb(0, 0, 0); /* Green text color for success alert */
+}
+
+.error-icon {
+  color: rgb(255, 0, 0); /* Red icon color for error alert */
+}
+
+.success-icon {
+  color: rgb(20, 180, 20); /* Green icon color for success alert */
+}
+
+
+.error-button {
+  color: #ffffff; /* Red text color for error button */
+   background: rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0); /* Red border color for error button */
+}
+.error-button:hover {
+background: rgb(202, 0, 0);
+}
+
+
+.success-button {
+  color: rgb(255, 255, 255); /* Green text color for success button */
+  background: rgb(20, 180, 20);
+  border-color: rgb(20, 180, 20); /* Green border color for success button */
+}
+
+.success-button:hover{
+    background: rgb(0, 132, 0);
+}
